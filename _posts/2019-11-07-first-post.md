@@ -26,7 +26,7 @@ Gross Domestic Product (GDP) is the monetary value of all finished goods and ser
 If we look into the per-capita data globally, we can see that Kuwait, Guyana, Germany, Netherland, Ireland, Sri Lanka, and the United States topped the rest of the world on generating plastic waste, as shown below. 
 ![waste_gen_per_capita](https://github.com/qianjing2020/qianjing2020.github.io/raw/master/plots/plastic_waste/plot_choropleth_waste_generation_per_capita.png)
 
-Since China obviously has the largest plastic waste import in the world before the ban beginig on 2018, a look into its palstic waste source will give insight on the waste traffic globally. The pie chart plots the portion of imports from each countries. The total amount of plastic waste China imported in the year of 2016 is over 7 million tons (7,134,966 tons). Given the population of 1.379 billion in 2016, per capita waste received from foreign country is 5.2 kg or 1000 wasted credit cards. 
+Since China obviously has the largest plastic waste import in the world before the ban beginig on 2018, a look into its palstic waste source will give insight on the waste traffic globally. The pie chart plots the portion of imports from each countries. The total amount of plastic waste China imported in the year of 2016 is over 7 million tons (7,134,966 tons). Given the population of 1.379 billion in 2016, per capita waste received from foreign country is 5.2 kg. In other words, each person in China were given 1000 wasted credit cards waste to dispose. 
 
 
 ![export_china]({{site.baseurl}}/https://github.com/qianjing2020/qianjing2020.github.io/raw/master/plots/plastic_waste/plot_pie_export_China.png)
