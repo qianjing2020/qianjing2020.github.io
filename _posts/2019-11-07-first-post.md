@@ -15,6 +15,8 @@ In the documentary, the worker sorting the plastic waste without any personal pr
 
 So, how bad is the situation, how much plastic do we produce per year, where do they go? which sector produces most plastic waste, How are they traded globally?  There are so many questions to be answered and big data to gather. I looked into the data I found from [our world in data](https://ourworldindata.org/) and here are some interesting plot I generated in Python. Hopefully by doing and sharing it, we can look straight at the problem and take actions to deviate from this self-destruction course for human race.   
 
-![Plastic fate]({{site.baseurl}}/https://github.com/qianjing2020/qianjing2020.github.io/raw/master/plots/plastic_waste/plot_bar_plastic_fate.png)
+Based on 2010 data, the total generated plastic waste annually is over 273 million tons, and 1.9 million tons were littered. Given a common plastic credit card of 5 grams, we can picture ourselves generating 7913 credit cards per person per year and each of us littered 55 pieces of the credit cards into other people's land anually.                                        
+
+![Plastic fate](https://github.com/qianjing2020/qianjing2020.github.io/raw/master/plots/plastic_waste/plot_bar_plastic_fate.png)
 
 [Plastic China]: https://www.youtube.com/watch?v=OJrVYB15aFA
