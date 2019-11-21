@@ -2,11 +2,9 @@
 layout: post
 title: How bad is the plastic waste problem?
 image: /img/hello_world.jpeg
-published: true
+published: false
 ---
-
-![Syringe Toy](http://mmbiz.qpic.cn/mmbiz/qzqGrkG24E8JWpsoGKn4aW4573YufDX7qFUojCRiczZKzNWCP2ibdf0teIPgiasGS5Fg5h4XfRLleic76HAg3KSYUw/0)
-A documentary by Wang Jiuliang, **Plastic China**[![Plastic China](https://img.youtube.com/vi/OJrVYB15aFA/0.jpg)](https://www.youtube.com/watch?v=OJrVYB15aFA), revealed the reality of the plastic waste industry in China.  
+A documentary by Wang Jiuliang, **Plastic China** (2016) [![Plastic China](https://img.youtube.com/vi/OJrVYB15aFA/0.jpg)](https://www.youtube.com/watch?v=OJrVYB15aFA), revealed the reality of the plastic waste industry in China.  
 In the documentary, the worker sorting the plastic waste without any personal protection equipment, risking having their skin punctured by discarded medical plastic equipment. Unattended children playing on the plastic waste hill and pick up things to play unknowing that some are tremendously dangerous to their life.
 
 "Plastics are hard to sort. There are hundreds of them, something Polyester, something polychlorine, something benzene, something polyoxymethylene. Experienced worker light them up and can tell by the burning smell," says old worker Yu in the documentary,   
