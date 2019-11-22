@@ -36,15 +36,17 @@ Gross Domestic Product (GDP) is the monetary value of all finished goods and ser
 China had the largest plastic waste import in the world, before the ban implemented in January 2018. A look into the source of China's palstic waste import can give some insight on the waste traffic globally. The pie chart below plots the portion of China's imports from other countries. The total amount of plastic waste China imported in the year of 2016 was over 7 million tons (7,134,966 tons). Given the population of 1.379 billion in China in 2016, per-capita waste received from foreign country was 5.2 kg. In other words, each person in China were given 1000 wasted credit cards waste to handle. 
 ![export_china](https://github.com/qianjing2020/qianjing2020.github.io/raw/master/plots/plastic_waste/plot_pie_export_China.png)
 
-So what can we do, here is a plot showing the sources of the plastic. Plastic generation and waste generation are shown by each sector. As pretty much all environmental engineers and scientists agree, the best way to reduce a waste is to cut it down at the source. From the bar plot, we can tell we are wasting tones of resources, literaly, on packaging! 
+So how can we effectively reduce the plastic waste? As pretty much all environmental engineers and scientists agree, the best way to reduce a waste is to cut it down at the source. The bar plot below shows the sources of the plastic generation and waste generation. Plastic waste generation is positively related to plastic product generation. So if we reduce the generation of product, we can reduce the generation of its waste. Comparing the sectors in the bar plot, we can tell the No.1 source is packaging. We are wasting millions of tons of our resources on packaging! 
 ![waste source](https://github.com/qianjing2020/qianjing2020.github.io/raw/master/plots/plastic_waste/plot_bar_production_generation.png)
 
-So, I am pondering on what I can do to reduce plastic packaging, and came out with a list:
+So, I started pondering on what I can do to reduce plastic packaging, and came out with a list:
 
 - Avoid overpackaged gifts
 - Bring a canvas tote bag for grocery shopping
-- Buy bulk food from local food co-op instead from Amazon
+- Carry water bottle or own coffee mug 
+- Buy bulk food from local food co-op 
+- Opt for minimal packaging when order online 
 - Considering serve biryani rice in cabage or banana leaves at your party
-- Go for [edible spoon/forks](https://www.youtube.com/watch?v=r4Cc5zmy0eY) which are good for earth and tummy 
+- Go for [edible spoon/forks](https://www.youtube.com/watch?v=r4Cc5zmy0eY) which are good for earth and tummy! 
 
-Okay, enough data story telling for today! I am going back to my kitchen launching a fun homemade edible utensil project. Here is the [recipe](https://www.youtube.com/watch?v=-fr-cBA5P1I) I am going to follow. My next blog will be another story on how the plastic turned into microplastic and today how much plastic each human being is ingesting in the form of microparticle (one credit card per week or possibly more?) Oh, yes, it all comes back at us!
+Okay, enough data wrestling for today! I am going back to my kitchen launching a fun homemade edible spoon project. Here is the [link to the recipe](https://www.youtube.com/watch?v=-fr-cBA5P1I) I am going to try. My next blog will be another story on how the plastic turned into microplastic particles, and inevitably they end up on our table, and how much plastic we are ingesting. One credit card per week or possibly more? Oh, yes, it all comes back at us!
