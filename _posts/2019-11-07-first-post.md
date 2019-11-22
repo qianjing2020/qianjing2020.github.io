@@ -2,7 +2,7 @@
 layout: post
 title: How bad is the plastic waste problem?
 image: /img/hello_world.jpeg
-published: false
+published: true
 ---
 Wang Jiuliang's independent documentary [**Plastic China**](https://www.youtube.com/watch?v=OJrVYB15aFA) 
 (2016, 82 mins), now avaiable on [Youtube](http://www.youtube.com) and [Amazon Prime](https://www.amazon.com/Prime-Video/), [![Plastic China](https://img.youtube.com/vi/OJrVYB15aFA/0.jpg)](https://www.youtube.com/watch?v=OJrVYB15aFA) for the first time reported the depth and width of the problem in plastic waste industry in China. Shortly after it went viral, the documentary waws banned in 2017 from the internet in China. However, the impact of Wang's work in China was said to be comparable to Rachel Carson’s book “Silent Spring” in the Unite States. The environmental movement finally led to the official ban of the import of 24 kinds of solid wastes from foreign countries, implemented on January 1, 2018.
@@ -20,8 +20,8 @@ Based on 2010 data, the total generated plastic waste annually is over 273 milli
 It can be seen from the scattered plot below that the Unite States, China, Japan, Brazil, Germany are the top 5 in plastic waste generation. China is the No. 1 in plastic generation. US is the No.1 in plastic litterring and plastic waste per capita. Germany drops out of the top 5 list on littering. India (next to mexico on the scattered plot) are the second most populated country and its small bubble size indicates it has a really low per-capita plastic waste. 
 ![bubble1](https://github.com/qianjing2020/qianjing2020.github.io/raw/master/plots/plastic_waste/plot_bubble_generation_litter_popu.png)
 
-Gross Domestic Product (GDP) is the monetary value of all finished goods and services made within a country during a specific period. The research question is "Is GDP and waste generation dependent?" The below scattered plot shows the mismanaged plastic waste per capita vs. GDP per capita, buble size being the country population. Comparing China and India (two largest country populational wise), China obviously can learn from India on how to manage waste better and not stress its environment for GDP growing. The United States seems to do a good job managing its plastic waste while still maintaining the highest GDP, or, does it really?
-![bubble2](https://github.com/qianjing2020/qianjing2020.github.io/raw/master/plots/plastic_waste/plot_bubble_mismanaged_vs_GDP.png)
+Gross Domestic Product (GDP) is the monetary value of all finished goods and services made within a country during a specific period. The research question is "Is GDP and mismanaged waste negatively dependent?" The below scattered plot shows the mismanaged plastic waste per capita vs. GDP per capita, buble size being the country population. The data are scattered and there is no visual dependence of the two variables. Waste mismanagement is not necessarily correlated to low GDP, policy, culture, and other important factors all need to be examineded based on each case. Comparing China and India (two largest country populational wise), China obviously can learn from India on how to manage waste better and not stress its environment for GDP growing. The United States seems to do a good job managing its plastic waste while still maintaining the highest GDP, or, does it really?
+![bubble2](https://github.com/qianjing2020/qianjing2020.github.io/raw/master/plots/plastic_waste/plot_bubble_waste_GDP.png)
 
 If we look into the per-capita data globally, we can see that Kuwait, Guyana, Germany, Netherland, Ireland, Sri Lanka, and the United States topped the rest of the world on generating plastic waste, as shown below. 
 ![waste_gen_per_capita](https://github.com/qianjing2020/qianjing2020.github.io/raw/master/plots/plastic_waste/plot_choropleth_waste_generation_per_capita.png)
