@@ -1,4 +1,4 @@
-Data from Katya Koepsel <katya@adventurescientists.org>
+Data obtained via personal contact to Katya Koepsel <katya@adventurescientists.org>
 ____________________________
 Katya Koepsel
 Projects Team Assistant
