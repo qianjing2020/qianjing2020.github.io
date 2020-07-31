@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Build a decision tree using only Python
-image: /img/tree.jpeg
+image: /img/tree.png
 ---
 
 Tree tree tree! Don't we all love trees! Decision tree is a great scientific tool for classification and regression. This blog demonstrates how to make a decision tree classifier using basic Python code without extended libraries.  Our completed DecisionTree class implements **fit**, **predict** , and **print** methods. To skip the following blah blah part which took me hours to write up, you can directly go to [my github repo](https://github.com/qianjing2020/CS-Build-Week-I-/tree/master/src) for the code. 
