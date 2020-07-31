@@ -51,7 +51,8 @@ def info_gain(left, right, current_impurity):
     """
     # weight for gini score of the left branch
     w = float(len(left)) / (len(left) + len(right))
-    return current_impurity - w * gini(left) - (1 - w) * gini(right)~~~
+    return current_impurity - w * gini(left) - (1 - w) * gini(right)
+~~~
 
 The next step to build a decision tree is to establish criterion to split the data into two branches. We create a **decision node** for such a split. A node will contain  and the associated criterion to split the data. From the very first node on the top, each node will have two child nodes down until no further split can happen. These nodes at the very bottom are called a **leaf nodes**, and they are simply the set of the classes appeared in training data. 
 
