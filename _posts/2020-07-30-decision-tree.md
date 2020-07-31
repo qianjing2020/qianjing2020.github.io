@@ -24,7 +24,7 @@ Let's start with simple example. Suppose we have a task to identify items from i
 |  'Green'  |  'oval'   |  1  |  'Leaf'   |  
 
 By looking at the data, we can see that if we create the first split of the decision tree by comparing the color (feature in column 0), we can spit the items into two distinct classes: Leaf and Sky. The occurrence of Leaf as a class is $2/3$, and Sky $1/3$. The Gini impurity at this node is:
-```I_G = 1 - (2/3)^2 - (1/3)^2 = 0.444```. As we recall, impurity measures how mixed our data is after the splitting.  If there is only one class exist in our data, then ```I_G = 1-1^2 = 0$```, and there is 0 mix/impurity in our data. Gini impurity lies between 0 and 1.
+$I_G = 1 - (2/3)^2 - (1/3)^2 = 0.444$. As we recall, impurity measures how mixed our data is after the splitting.  If there is only one class exist in our data, then $I_G = 1-1^2 = 0$, and there is 0 mix/impurity in our data. Gini impurity lies between 0 and 1.
 
 Below is a python function to calculate Gini impurity.
 ~~~python
@@ -56,7 +56,7 @@ def info_gain(left, right, current_impurity):
 
 The next step to build a decision tree is to establish criterion to split the data into two branches. We create a **decision node** for such a split. A node will contain  and the associated criterion to split the data. From the very first node on the top, each node will have two child nodes down until no further split can happen. These nodes at the very bottom are called a **leaf nodes**, and they are simply the set of the classes appeared in training data. 
 
-The tricky question to build such a decision tree is: what criterion do we apply and where are their respective locations in the tree? For the simple dataset in the above table, if the first criterion is ```color == "Blue"```, we can split the data into a **true branch** (the observations have color blue) and a **false branch** (the observations with color other than blue). Obviously the split and information gain will be quite different if we choose size for the first criterion. In addition, ```size >= 2``` and ```size >= 8``` will results in different tree structures. In fact, which feature we use and the feature value we choose to express the criterion will determine the split and the overall appereance of our final tree.  
+The tricky question to build such a decision tree is: what criterion do we apply and where are their respective locations in the tree? For the simple dataset in the above table, if the first criterion is ```color == "Blue"```, we can split the data into a **true branch** (the observations have color blue) and a **false branch** (the observations with color other than blue). Obviously the split and information gain will be quite different if we choose size for the first criterion. In addition, ```size >= 2``` and ```size >= 8``` will results in different tree structures. In fact, which feature we use and the feature value we choose to express the criterion will determine the split and the overall appearance of our final tree.  
 
 Gladly we already have the tools (impurity metrics and Python) to find out what will be the right criterion at each node. Using training data, we can loop through all features and theirs observed values to find the best criterion, which in turn will results the greatest information gain. So our beautiful tree can have the right split at the right place and bud out leaves at the end. The algorithm for finding the best criterion is as follows.
 
@@ -148,12 +148,13 @@ Code testing: The python code includes the following make-up tiny dataset to pla
 |  'Green' |  'polygon' |  10  |  'Meadow'   | 
 
 
-```python
+~~~python
 dt = DecisionTree()
 dt.fit(training_data)
 dt.print_tree()
 dt.predict(dt.tree, observation)
-```
+~~~
+
 You will have the following output running [decision_tree.py](https://github.com/qianjing2020/CS-Build-Week-I-/blob/master/src/decision_tree.py).  
 
 ~~~python
