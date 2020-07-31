@@ -12,7 +12,7 @@ Before even start building a decision tree, we need to know to what extent our d
 
 You can read more about [Gini impurity](https://en.wikipedia.org/wiki/Decision_tree_learning#Gini_impurity) somewhere else. The Gini impurity is a function of probabilities of each class, and for a set of observations with J classes is calculated as follows: 
 
-<img src = "https://render.githubusercontent.com/render/math?math=I_G(p)%20=%201%20-\sum^J_{i=1}%20{p_i}^{2}%20">
+<img src = "https://render.githubusercontent.com/render/math?math=I_G(p)%20=%201%20-\sum^J_{i=1}%20{p_i}^{2}%20", width=100>
 
 
 where _J_ = the number of all classes, and *p_i* = the fraction of observations labeled with class _i_.
