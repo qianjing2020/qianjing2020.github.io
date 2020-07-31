@@ -191,7 +191,7 @@ Time for sklearn decision tree to finish Iris Dataset (4 features, 150 observati
 Time for my decisioin tree to finish Iris Dataset (4 features, 150 observations) fitting and prediction is 0.0407 seconds. Accuracy score is 1.0.
 ~~~
 
-When testing on larger dataset: [Banknote authentication dataset](https://archive.ics.uci.edu/ml/datasets/banknote+authentication), both decision tree classifiers achieved same accuracy, but it took 100x longer time for our home-made code to finish running. 
+When testing on larger dataset: [Banknote authentication dataset](https://archive.ics.uci.edu/ml/datasets/banknote+authentication), both decision tree classifiers achieved the same accuracy, but it took _100_ longer time for our home-made code to finish running. 
 
 ~~~python
 Time for sklearn decision tree to finish Banknotes Dataset (4 features, 1372 observations) fitting and prediction is 0.3358 seconds. Accuracy score is 0.9782.
