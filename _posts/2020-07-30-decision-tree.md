@@ -110,7 +110,7 @@ class DecisionTree:
         
     def fit(self, features, data):
         """ fit data to tree model using recursion"""
-        # get best criterion lead to greatest infomation gain"""
+        # get best criterion lead to greatest information gain"""
         gain, criterion = find_best_split(features, data)
         # Base case: no further info gain, data reach leaf nodes, 
         if gain == 0:
@@ -184,35 +184,31 @@ Actual: Ballon, predicted: ['Ballon']
 Actual: Meadow, predicted: ['Meadow']
 ~~~
 
-In terms of performance, we can test our code against the [ DecisionTreeClassifier](https://scikit-learn.org/stable/modules/tree.html#tree-classification) from sklearn library. We used the famous [iris dataset](https://archive.ics.uci.edu/ml/datasets/iris). When the data is split into train, test data as _80%_, _20%_, respectively, the results of two decision trees are as follows:
+In terms of performance, we can test our code against the [ DecisionTreeClassifier](https://scikit-learn.org/stable/modules/tree.html#tree-classification) from scikit-learn library. We used the famous [iris dataset](https://archive.ics.uci.edu/ml/datasets/iris). When the data is split into train, test data as _80%_, _20%_, respectively, the results of two decision trees are as follows:
 
 ~~~python
 Time for sklearn decision tree to finish Iris Dataset (4 features, 150 observations) fitting and prediction is 0.0184 seconds. Accuracy score is 1.0.
-Time for my decisioin tree to finish Iris Dataset (4 features, 150 observations) fitting and prediction is 0.0407 seconds. Accuracy score is 1.0.
+Time for my decision tree to finish Iris Dataset (4 features, 150 observations) fitting and prediction is 0.0407 seconds. Accuracy score is 1.0.
 ~~~
 
 When testing on larger dataset: [Banknote authentication dataset](https://archive.ics.uci.edu/ml/datasets/banknote+authentication), both decision tree classifiers achieved the same accuracy, but it took _100_ longer time for our home-made code to finish running. 
 
 ~~~python
 Time for sklearn decision tree to finish Banknotes Dataset (4 features, 1372 observations) fitting and prediction is 0.3358 seconds. Accuracy score is 0.9782.
-Time for my decisioin tree to finish Banknotes Dataset (4 features, 1372 observations) fitting and prediction is 38.0418 seconds. Accuracy score is 0.9782.
+Time for my decision tree to finish Banknotes Dataset (4 features, 1372 observations) fitting and prediction is 38.0418 seconds. Accuracy score is 0.9782.
 ~~~
 
 To help get an idea of the time complexity of our decision tree, here is a rough estimation: 
 Given _N_ observations and _K_ features, the depth of the tree would be _O(logN)_ to _O(N)_, the later being the worst scenario. Since finding the best criterion at a node requires testing all features and their values, this time complexity on each node can be _O(KN)_. Assume runtime for splitting the tree at each node is of _O(1)_, the time complexity for build the entire tree would be some where between _O(KNlogN)_ to _O(KN<sup>2</sup>)_ . 
 
-In conclusion, we built a basic decision tree classifier from scratch using Python Language. Its performance is very similar to the one in sklearn library. However, when data size increase to ~_10<sup>3</sup>_, the runtime is a much longer than the sklearn decision tree classifier. I would like to dive deeper into the more efficient algorithms that sklearn provides (Thanks to open source!), but since this blog focuses on only understanding the mechanism behind the decision tree classifier, let's take a break! 
+In conclusion, we built a basic decision tree classifier from scratch using Python Language. Its performance is very similar to the one in scikit-learn library. However, when data size increase to ~_10<sup>3</sup>_, the runtime is a much longer than the scikit-learn decision tree classifier. I would like to dive deeper into the more efficient algorithms that scikit-learn provides (Thanks to open source!), but since this blog focuses on only understanding the mechanism behind the decision tree classifier, let's take a break! 
 
-Related resources:
+**Related resources:**
 
-[Wikipedia: Decision tree learning](https://en.wikipedia.org/wiki/Decision_tree_learning)
-
-[StatQuest: Decision Trees](https://www.youtube.com/watch?v=7VeUPuFGJHk&t=909s)
-
-[Comparing these two impurity metrics](https://www.quora.com/What-is-difference-between-Gini-Impurity-and-Entropy-in-Decision-Tree#:~:text=in%20a%20node.-,Gini%3A%2D%20It%20shows%20that%20the%20data%20point%20that%20we%20have,small%20values%20show%20less%20impurity.)
-
-[Write a Decision Tree Classifier from scratch](https://www.youtube.com/watch?v=LDRbO9a6XPU)
-
-[Implement a Decision Tree Algorithm from scarth in Python](https://machinelearningmastery.com/implement-decision-tree-algorithm-scratch-python/)
-
+[scikit-learn Decision tree classifier](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html)\
+[Wikipedia: Decision tree learning](https://en.wikipedia.org/wiki/Decision_tree_learning)\
+[StatQuest: Decision Trees](https://www.youtube.com/watch?v=7VeUPuFGJHk&t=909s)\
+[Comparing these two impurity metrics](https://www.quora.com/What-is-difference-between-Gini-Impurity-and-Entropy-in-Decision-Tree#:~:text=in%20a%20node.-,Gini%3A%2D%20It%20shows%20that%20the%20data%20point%20that%20we%20have,small%20values%20show%20less%20impurity.)\
+[Write a Decision Tree Classifier from scratch](https://www.youtube.com/watch?v=LDRbO9a6XPU)\
+[Implement a Decision Tree Algorithm from scratch in Python](https://machinelearningmastery.com/\implement-decision-tree-algorithm-scratch-python/)\
 [Discussion on decision tree complexity](https://www.quora.com/How-do-I-calculate-the-time-complexity-of-a-decision-tree-machine-learning-algorithm)
