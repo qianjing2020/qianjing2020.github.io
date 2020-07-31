@@ -15,7 +15,7 @@ You can read more about [Gini impurity](https://en.wikipedia.org/wiki/Decision_t
 <img src = "https://render.githubusercontent.com/render/math?math=I_G(p)%20=%201%20-\sum^J_{i=1}%20{p_i}^{2}%20" width="200">
 
 
-where _J_ = the number of all classes, and *p_i* = the fraction of observations labeled with class _i_.
+where _J_ = the number of all classes, and _p<sub>i</sub>_ = the fraction of observations labeled with class _i_.
 
 Let's start with simple example. Suppose we have a task to identify items from images, and the items have been boiled down to numbers and/or categories. We want to guess which class the item belongs with input of its features such as color, shape, and size. We'll call each row of the data table an observation, column 0 to column 2 are features, and the last column is label/class. We want to use a set of pre-classified items to build a decision tree so that we can predict the classes for new observations. This is obviously a supervised classification problem. 
 
