@@ -11,9 +11,11 @@ Tree tree tree! Don't we all love trees! Decision tree is a great scientific too
 Before even start building a decision tree, we need to know to what extent our data is still mixed after splitting at a node. To measure such "mixedness" or "impurity", we use metrics such as Gini impurity and Entropy. The two metrics have different formula of course but their performance are very similar. Since Gini impurity is more efficient to compute, we'll use it as our metrics to evaluate performance of splitting. Fun fact: Gini impurity is not an acronym, it is named after mathematician Corrado Gini.  
 
 You can read more about [Gini impurity](https://en.wikipedia.org/wiki/Decision_tree_learning#Gini_impurity) somewhere else. The Gini impurity is a function of probabilities of each class, and for a set of observations with J classes is calculated as follows: 
-$$I_G(p) = 1 - \sum^J_{i=1} {p_i}^{2}$$
 
-where $J$ = the number of all classes, and $p_i$ = the fraction of observations labeled with class $i$.
+<img src = "https://render.githubusercontent.com/render/math?math=I_G(p)%20=%201%20-\sum^J_{i=1}%20{p_i}^{2}%20">
+
+
+where _J_ = the number of all classes, and *p_i* = the fraction of observations labeled with class _i_.
 
 Let's start with simple example. Suppose we have a task to identify items from images, and the items have been boiled down to numbers and/or categories. We want to guess which class the item belongs with input of its features such as color, shape, and size. We'll call each row of the data table an observation, column 0 to column 2 are features, and the last column is label/class. We want to use a set of pre-classified items to build a decision tree so that we can predict the classes for new observations. This is obviously a supervised classification problem. 
 
@@ -23,8 +25,8 @@ Let's start with simple example. Suppose we have a task to identify items from i
 |  'Blue'  |  'rectangle' |  10  |  'Sky'      | 
 |  'Green'  |  'oval'   |  1  |  'Leaf'   |  
 
-By looking at the data, we can see that if we create the first split of the decision tree by comparing the color (feature in column 0), we can spit the items into two distinct classes: Leaf and Sky. The occurrence of Leaf as a class is $2/3$, and Sky $1/3$. The Gini impurity at this node is:
-$I_G = 1 - (2/3)^2 - (1/3)^2 = 0.444$. As we recall, impurity measures how mixed our data is after the splitting.  If there is only one class exist in our data, then $I_G = 1-1^2 = 0$, and there is 0 mix/impurity in our data. Gini impurity lies between 0 and 1.
+By looking at the data, we can see that if we create the first split of the decision tree by comparing the color (feature in column 0), we can spit the items into two distinct classes: Leaf and Sky. The occurrence of Leaf as a class is *2/3*, and Sky *1/3*. The Gini impurity at this node is:
+  _I<sub>G</sub> = 1 - (2/3)<sup>2</sup> - (1/3)<sup>2</sup> = 0.444_. As we recall, impurity measures how mixed our data is after the splitting.  If there is only one class exist in our data, then _I<sub>G</sub> = 1-1<sup>2</sup> = 0_, and there is 0 mix/impurity in our data. Gini impurity lies between 0 and 1.
 
 Below is a python function to calculate Gini impurity.
 ~~~python
@@ -182,7 +184,7 @@ Actual: Ballon, predicted: ['Ballon']
 Actual: Meadow, predicted: ['Meadow']
 ~~~
 
-In terms of performance, we can test our code against the [ DecisionTreeClassifier](https://scikit-learn.org/stable/modules/tree.html#tree-classification) from sklearn library. We used the famous [iris dataset](https://archive.ics.uci.edu/ml/datasets/iris). When the data is split into train, test data as 80%, 20%, respectively, the results of two decision trees are as follows:
+In terms of performance, we can test our code against the [ DecisionTreeClassifier](https://scikit-learn.org/stable/modules/tree.html#tree-classification) from sklearn library. We used the famous [iris dataset](https://archive.ics.uci.edu/ml/datasets/iris). When the data is split into train, test data as _80%_, _20%_, respectively, the results of two decision trees are as follows:
 
 ~~~python
 Time for sklearn decision tree to finish Iris Dataset (4 features, 150 observations) fitting and prediction is 0.0184 seconds. Accuracy score is 1.0.
@@ -197,9 +199,9 @@ Time for my decisioin tree to finish Banknotes Dataset (4 features, 1372 observa
 ~~~
 
 To help get an idea of the time complexity of our decision tree, here is a rough estimation: 
-Given $N$ observations and $K$ features, the depth of the tree would be $O(logN)$ to $O(N)$, the later being the worst scenario. Since finding the best criterion at a node requires testing all features and their values, this time complexity on each node can be $O(KN)$. Assume runtime for splitting the tree at each node is of $O(1)$, the time complexity for build the entire tree would be some where between $O(KNlogN)$ to $O(KN^2)$ . 
+Given _N_ observations and _K_ features, the depth of the tree would be _O(logN)_ to _O(N)_, the later being the worst scenario. Since finding the best criterion at a node requires testing all features and their values, this time complexity on each node can be _O(KN)_. Assume runtime for splitting the tree at each node is of _O(1)_, the time complexity for build the entire tree would be some where between _O(KNlogN)_ to _O(KN<sup>2</sup>)_ . 
 
-In conclusion, we built a basic decision tree classifier from scratch using Python Language. Its performance is very similar to the one in sklearn library. However, when data size increase to ~$10^3$, the runtime is a much longer than the sklearn decision tree classifier. I would like to dive deeper into the more efficient algorithms that sklearn provides (Thanks to open source!), but since this blog focuses on only understanding the mechanism behind the decision tree classifier, let's take a break! 
+In conclusion, we built a basic decision tree classifier from scratch using Python Language. Its performance is very similar to the one in sklearn library. However, when data size increase to ~_10<sup>3</sup>_, the runtime is a much longer than the sklearn decision tree classifier. I would like to dive deeper into the more efficient algorithms that sklearn provides (Thanks to open source!), but since this blog focuses on only understanding the mechanism behind the decision tree classifier, let's take a break! 
 
 Related resources:
 
