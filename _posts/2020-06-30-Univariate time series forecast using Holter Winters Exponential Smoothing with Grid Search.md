@@ -23,36 +23,38 @@ Luckily [Statsmodels](https://www.statsmodels.org/dev/generated/statsmodels.tsa.
 ## Configurations:
 As a first approach, [test_65_sequence.py](https://github.com/qianjing2020/Sauti-Africa-Market-Monitoring-DS/blob/master/hw-forecast/app/test/test_65_sequence.py) selects 65 sequences from our 4-year East Africa Market Price Dataset provided by our stakeholder. The default configurations for model are as follows:
 
-* Data split (in days):\
-train (start) = 692,
-test(start) = 1038,
-val =30,
-window length = 30, 
-sliding distance = 14
+* Data split (in days):  
+    train (start) = 692,
+    test(start) = 1038,
+    val =30,
+    window length = 30, 
+    sliding distance = 14
 
-* Model parameters:\
-A total of 144 configurations (_144=3x3x2x2x2x2_). \
-The searched parameters *t, d, s, p, b, r* are trend type, dampening type, seasonality type, seasonal period, Box-Cox transform, removal of the bias at fitting, respectively. Their search domains are: \
-t_params = ['add', 'mul', None]\
-d_params = [True, False]\
-s_params = ['add', 'mul', None]\
-p_params = [12, 365]\
-b_params = [True, False]\
-r_params = [True, False]\
-The 'add' (additive) method is preferred when the seasonal variations are roughly constant through the series, while the 'mul' (multiplicative) method is preferred when the seasonal variations are changing proportional to the level of the series. 
+* Model parameters:  
+    A total of 144 configurations (_144=3x3x2x2x2x2_).  
+
+    The searched parameters *t, d, s, p, b, r* are trend type, dampening type, seasonality type, seasonal period, Box-Cox transform, removal of the bias at fitting, respectively. Their search domains are:  
+    t_params = ['add', 'mul', None]  
+    d_params = [True, False]  
+    s_params = ['add', 'mul', None]  
+    p_params = [12, 365]  
+    b_params = [True, False]  
+    r_params = [True, False]  
+
+    The 'add' (additive) method is preferred when the seasonal variations are roughly constant through the series, while the 'mul' (multiplicative) method is preferred when the seasonal variations are changing proportional to the level of the series. 
 
 ## Model output: 
-* Example of one time series: sale type = retail, market = 'Dar Es Salaam', product = ' Morogoro Rice'\
-Best configuration is ['add', True, 'add', 12, False, False]
-(aka, additive trend, trend dampen, add seasonal period =12, no Box-Cox transform, no removal of bias during fitting)\
-Root mean square percentage error (rmspe):\
-5.40% for 30 days forecasting, test dataset and predictions
-1.17% for 30 days forecasting, validation data and predictions
+* Example of one time series: sale type = retail, market = 'Dar Es Salaam', product = ' Morogoro Rice': 
+  
+    Best configuration = ['add', True, 'add', 12, False, False]
+ 
+    Root mean square percentage error (RMSPE):
+         5.40% for 30 days forecasting, test dataset and predictions
+         1.17% for 30 days forecasting, validation data and predictions
 
-* Finally, all the time series metadata, best parameter configuration, model forecast for the validation period and the correspondent RMSPE are saved to database table 'hw_params_wholesale' and 'hw_params_retail' for future reference. 
-
-![Holter-Winters model optimized parameters and 30-day predictions](img src="/img/hw_model_result.png"  width="800"))
-
+* All the time series metadata, best parameter configuration, model forecast for the validation period and the correspondent RMSPE are saved to database table 'hw_params_wholesale' and 'hw_params_retail' for future reference. 
+    <img align="left" src="/img/hw_model_result.png"  width="800">
+    
 ## Methodology Pros and Cons:
 Pros: 
 * Model parameters can be customized. User has total control over window size (number of days to predict), sliding pace, train-test-val split, and grid-search domain. 
