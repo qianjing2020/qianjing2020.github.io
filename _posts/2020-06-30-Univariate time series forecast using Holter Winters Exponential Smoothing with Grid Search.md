@@ -54,7 +54,10 @@ As a first approach, [test_65_sequence.py](https://github.com/qianjing2020/Sauti
 
 * All the time series metadata, best parameter configuration, model forecast for the validation period and the correspondent RMSPE are saved to database table 'hw_params_wholesale' and 'hw_params_retail' for future reference. 
   
-    <img src="https://github.com/qianjing2020/qianjing2020.github.io/blob/master/img/hw_model_result.png"  width="800">
+  
+    <img src="https://github.com/qianjing2020/qianjing2020.github.io/blob/master/img/hw_model_result.png"  width="1200">  
+
+    
     
 ## Methodology Pros and Cons:
 Pros: 
