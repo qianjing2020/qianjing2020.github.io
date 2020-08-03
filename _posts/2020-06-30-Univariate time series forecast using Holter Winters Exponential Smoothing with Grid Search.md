@@ -51,7 +51,7 @@ Root mean square percentage error (rmspe):\
 
 * Finally, all the time series metadata, best parameter configuration, model forecast for the validation period and the correspondent RMSPE are saved to database table 'hw_params_wholesale' and 'hw_params_retail' for future reference. 
 
-<img src = 'img/hw_model_result.png' width = '800'>
+![Holter-Winters model optimized parameters and 30-day predictions](img src="/img/hw_model_result.png"  width="800"))
 
 ## Methodology Pros and Cons:
 Pros: 
