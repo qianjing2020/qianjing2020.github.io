@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Holter Winters Exponential Smoothing with Grid Search on Univariate Time Series Dataset
+title: Holter-Winters exponential smoothing model with grid search on univariate time series predictions
 image: /img/stock.png
 ---
 
@@ -53,7 +53,8 @@ As a first approach, [test_65_sequence.py](https://github.com/qianjing2020/Sauti
          1.17% for 30 days forecasting, validation data and predictions
 
 * All the time series metadata, best parameter configuration, model forecast for the validation period and the correspondent RMSPE are saved to database table 'hw_params_wholesale' and 'hw_params_retail' for future reference. 
-    <img align="left" src="/img/hw_model_result.png"  width="800">
+  
+    <img src="https://github.com/qianjing2020/qianjing2020.github.io/blob/master/img/hw_model_result.png"  width="800">
     
 ## Methodology Pros and Cons:
 Pros: 
